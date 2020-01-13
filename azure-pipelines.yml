@@ -10,7 +10,5 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: sbt clean
-  displayName: 'Running $ sbt clean'
-- script: sbt buildAndPublish -DCLOUDFLOW_DOCKER_REGISTRY=$(cloudflow.docker.registry) -DCLOUDFLOW_DOCKER_REPOSITORY=$(cloudflow.docker.repository)
+- script: sbt buildAndPublish
   displayName: 'Running $ sbt buildAndPublish'
